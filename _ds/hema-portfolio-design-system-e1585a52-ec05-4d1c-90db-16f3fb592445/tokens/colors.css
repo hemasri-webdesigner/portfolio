@@ -1,0 +1,50 @@
+/* ============================================================
+   COLOR TOKENS
+   Dark, warm-neutral palette with a brass accent.
+   Base values first, semantic aliases below.
+   ============================================================ */
+:root {
+  /* --- Base neutrals (warm charcoal → bone) --- */
+  --bg-base:      #0c0c10;  /* page background, near-black with a cool tint */
+  --bg-raised:    #131319;  /* raised surface / card */
+  --bg-overlay:   #1a1a22;  /* hover surface, popovers */
+  --ink:          #f3efe8;  /* primary text, warm bone */
+  --ink-dim:      #a8a3b0;  /* secondary text, muted lavender-grey */
+  --ink-faint:    #6f6b78;  /* tertiary / disabled text */
+
+  /* --- Brass accent ramp --- */
+  --brass:        #c89b5c;  /* core brass */
+  --brass-bright: #e3b878;  /* highlighted brass, italic accent text */
+  --brass-deep:   #9a7438;  /* pressed / shadow brass */
+  --brass-wash:   rgba(200,155,92,0.14); /* tinted fills, glow */
+
+  /* --- Lines & hairlines --- */
+  --line:         rgba(243,239,232,0.10); /* default hairline border */
+  --line-strong:  rgba(243,239,232,0.20); /* emphasized border */
+  --line-faint:   rgba(243,239,232,0.045);/* grid texture lines */
+
+  /* --- Semantic status (used sparingly) --- */
+  --positive:     #7ec894;
+  --negative:     #e08572;
+  --notice:       #e3b878;
+
+  /* ============================================================
+     SEMANTIC ALIASES — reference these in components
+     ============================================================ */
+  --surface-page:    var(--bg-base);
+  --surface-card:    var(--bg-raised);
+  --surface-overlay: var(--bg-overlay);
+
+  --text-strong:  var(--ink);
+  --text-body:    var(--ink-dim);
+  --text-muted:   var(--ink-faint);
+  --text-accent:  var(--brass-bright);
+
+  --accent:        var(--brass);
+  --accent-hover:  var(--brass-bright);
+  --accent-press:  var(--brass-deep);
+  --on-accent:     #16130c;  /* ink that sits on a brass fill */
+
+  --border:        var(--line);
+  --border-strong: var(--line-strong);
+}

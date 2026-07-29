@@ -1,0 +1,42 @@
+/* ============================================================
+   SPACING, RADII, SHADOWS, MOTION
+   ============================================================ */
+:root {
+  /* --- Spacing scale (rem) --- */
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-5:  1.5rem;
+  --space-6:  2rem;
+  --space-7:  2.6rem;
+  --space-8:  3.5rem;
+  --space-9:  5rem;
+  --space-10: 7rem;
+
+  /* Page gutter — matches hero's 6vw side padding */
+  --gutter:   6vw;
+
+  /* --- Radii --- */
+  --radius-sm:   8px;
+  --radius-md:   12px;
+  --radius-lg:   18px;   /* cards */
+  --radius-xl:   28px;   /* large panels */
+  --radius-pill: 999px;  /* buttons, eyebrows, chips */
+
+  /* --- Border widths --- */
+  --border-hairline: 1px;
+
+  /* --- Shadows --- */
+  --shadow-sm:    0 2px 8px -4px rgba(0,0,0,0.5);
+  --shadow-md:    0 12px 32px -16px rgba(0,0,0,0.6);
+  --shadow-lift:  0 18px 48px -20px rgba(0,0,0,0.7);
+  --glow-brass:   0 12px 30px -10px rgba(227,184,120,0.5); /* primary btn hover */
+
+  /* --- Motion --- */
+  --ease-out:   cubic-bezier(0.22, 1, 0.36, 1); /* @kind other */
+  --ease-soft:  ease;  /* @kind other */
+  --dur-fast:   0.18s; /* @kind other */
+  --dur-base:   0.25s; /* @kind other */
+  --dur-slow:   0.45s; /* @kind other */
+}

@@ -1,0 +1,39 @@
+/* ============================================================
+   TYPOGRAPHY TOKENS
+   Display: Instrument Serif (editorial, italic accent).
+   UI/Body: Plus Jakarta Sans. Mono: JetBrains Mono.
+   ============================================================ */
+:root {
+  /* --- Families --- */
+  --font-display: 'Instrument Serif', Georgia, 'Times New Roman', serif;
+  --font-sans:    'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono:    'JetBrains Mono', ui-monospace, 'SF Mono', monospace;
+
+  /* --- Type scale (display uses fluid clamps) --- */
+  --text-hero:   clamp(2.8rem, 7.4vw, 6.4rem); /* h1 / hero */
+  --text-h1:     clamp(2.2rem, 4.5vw, 3.6rem);
+  --text-h2:     clamp(1.7rem, 3vw, 2.4rem);
+  --text-h3:     1.5rem;
+  --text-lg:     1.2rem;
+  --text-body:   1.05rem;
+  --text-sm:     0.9rem;
+  --text-xs:     0.8rem;
+  --text-eyebrow:0.76rem; /* uppercase tracked label */
+
+  /* --- Weights (sans) --- */
+  --weight-regular: 400;
+  --weight-medium:  500;
+  --weight-semibold:600;
+  --weight-bold:    700;
+
+  /* --- Line heights --- */
+  --leading-tight: 1.04; /* display headlines */
+  --leading-snug:  1.25;
+  --leading-body:  1.65;
+
+  /* --- Letter spacing --- */
+  --tracking-display: -0.01em;  /* tighten large serif */
+  --tracking-normal:   0;
+  --tracking-wide:     0.1em;   /* eyebrow / role labels */
+  --tracking-wider:    0.14em;  /* eyebrow capsule */
+}
